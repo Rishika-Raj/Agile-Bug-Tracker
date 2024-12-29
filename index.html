@@ -1,19 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bug Tracker</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bug Tracker</title>
+  <link rel="stylesheet" href="/static/css/style.css">
 </head>
 <body>
+  <div class="container">
     <h1>Bug Tracker</h1>
-    <div id="bug-list"></div>
     <form id="bug-form">
-        <input type="text" id="bug-title" placeholder="Bug Title" required>
-        <textarea id="bug-description" placeholder="Bug Description" required></textarea>
-        <button type="submit">Add Bug</button>
+      <label for="title">Bug Title:</label>
+      <input type="text" id="title" required>
+
+      <label for="description">Bug Description:</label>
+      <textarea id="description" required></textarea>
+
+      <button type="submit">Submit Bug</button>
     </form>
-    <script src="script.js"></script>
+
+    <div id="bug-list">
+      <h2>Reported Bugs</h2>
+      <ul id="bugs"></ul>
+    </div>
+  </div>
+
+  <script src="/static/js/app.js"></script>
 </body>
 </html>

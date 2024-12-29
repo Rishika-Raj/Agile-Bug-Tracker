@@ -3,21 +3,54 @@ body {
     background-color: #f4f4f4;
     margin: 0;
     padding: 20px;
-}
-h1 {
-    text-align: center;
-}
-#bug-form {
+  }
+  
+  .container {
     max-width: 600px;
-    margin: 20px auto;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  form {
     display: flex;
     flex-direction: column;
-}
-input, textarea, button {
-    margin: 5px 0;
+  }
+  
+  label {
+    margin-top: 10px;
+  }
+  
+  input, textarea, button {
+    margin-top: 5px;
     padding: 10px;
-}
-#bug-list {
-    margin: 20px auto;
-    max-width: 600px;
-}
+    font-size: 16px;
+  }
+  
+  button {
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background: #0056b3;
+  }
+  
+  #bug-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #bug-list li {
+    background: #eee;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
